@@ -1,0 +1,199 @@
+{
+    "metaTitle": "Home | Elevate Partners",
+    "metaDescription": "Find your dream home with our real estate services. Get expert advice and consultation",
+    "companyName": "Real Estate 4 U",
+    "heroSection": {
+        "h1": "Welcome to Elevate Estate Partners",
+        "p": "Your premier partner in real estate investment. We specialize in helping investors achieve exceptional returns through strategic multifamily real estate syndications.",
+        "button": "Invest With Us",
+        "aside": "Start your journey towards financial freedom today.",
+        "statistics": {
+            "assetsUnderManagement": "$800 M +",
+            "propertiesUnderManegement": "5000 +",
+            "averageAnualizedReturn": "35% +",
+            "button":"Invest With Us"
+        }
+    },
+    "about": {
+        "whoWeAre": "Who We Are",
+        "description": "Elevate Estate Partners is a multifamily real estate investment firm dedicated to providing high-yield investment opportunities. Our team of experienced professionals excels in identifying, acquiring, and managing value-add multifamily properties across key markets.",
+        "ourMission": "Our Mission",
+        "description2": "To elevate our investors' financial growth through strategic real estate investments, delivering strong cash flow, appreciation, and tax advantages.",
+        "ourValues": "Our Values",
+        "values": [
+            "Integrity: We prioritize transparency and trust in all our dealings.",
+            "Excellence: We strive for the highest standards in every project.",
+            "Commitment: We are dedicated to our investors' success."
+
+        ],
+        "ourTeam": "Our Team",
+        "team": [
+            {
+                "name": "Alexander Smith",
+                "title": "CEO",
+                "img": "/ai-generated-8051239_1280.webp"
+            },
+            {
+                "name": "Janet Scrawel",
+                "title": "COO",
+                "img": "/business-8054604_1280.webp"
+            },
+            {
+                "name": "Eric Wang",
+                "title": "CTO",
+                "img": "/business-8053376_1280.webp"
+            },
+            {
+                "name": "Sarah Pew",
+                "title": "CTO",
+                "img": "/smiling-2385790_1280.webp"
+            }
+        ]
+    },
+    "awards": {
+      "title": "Award-Winning Real Estate Investment Firm",
+      "subtitle": "Ranked #1 Fastest Growing Company in Houston by INC 5,000"
+    },
+    "whatWeDo": {
+        "title": "What We Do",
+        "subtitle": "Passively invest in cash-flowing real estate without bringing more work and stress to your life – click the Invest With Us button below to begin your journey as a passive real estate investor with Disrupt Equity.",
+        "processes": [
+            {
+                "title": "We Acquire",
+                "description": "By utilizing our extensive industry experience and network, we identify valuable multifamily real estate investment prospects, including both publicly listed and exclusive off-market deals. Following a thorough underwriting process, we select opportunities that meet our stringent criteria and present them as comprehensive investment packages for our passive investors."
+            },
+            {
+                "title": "We Manage",
+                "description": "Our in-house property management team ensures the seamless operation and optimal profitability of our properties. They handle all aspects of property management, including tenant relations, maintenance, and financial oversight. By implementing efficient processes and proactive strategies, they maximize rental income and enhance property value, keeping our properties well-maintained, fully occupied, and profitable for our investors."
+            },
+            {
+                "title": "We Distribute",
+                "description": "As rental income from the apartment building is collected, passive investors will receive monthly distributions based on their ownership percentage, along with regular updates from our team. Once our business plan is completed, the property will be sold, and investors will receive their initial investment plus any profits from the sale."
+            }
+            
+        ]
+    },
+    "trackRecord": {
+      "title": "Our Track Record",
+      "description": "Disrupt Equity’s portfolio has generated an average annualized return (AAR) of 25.5% for investors. Disrupt has successfully closed over $800,000,000 in multifamily real estate transactions. ",
+      "projects": [
+        {
+          "name": "",
+          "img": "/properties/DE-Website-Homepage-Track-Record_Alamo-Oaks@2x.webp",
+          "description": "",
+          "status": "Sold"
+        },
+        {
+          "name": "",
+          "img": "/properties/DE-Website-Homepage-Track-Record_Beaumont-Heights@2x.webp",
+          "description": "",
+          "status": "Sold"
+        },
+        {
+          "name": "",
+          "img": "/properties/DE-Website-Homepage-Track-Record_Central-Park@2x.webp",
+          "description": "",
+          "status": "Sold"
+        },
+        {
+          "name": "",
+          "img": "/properties/DE-Website-Homepage-Track-Record_Huntington-Park@2x.webp",
+          "description": "",
+          "status": "Sold"
+        },
+        {
+          "name": "",
+          "img": "/properties/DE-Website-Homepage-Track-Record_Longfellow@2x.webp",
+          "description": "",
+          "status": "Sold"
+        },
+        {
+          "name": "",
+          "img": "/properties/DE-Website-Homepage-Track-Record_Marketplace-Square@2x.webp",
+          "description": "",
+          "status": "Sold"
+        },
+        {
+          "name": "",
+          "img": "/properties/DE-Website-Homepage-Track-Record_Retreat-at-Stone-Mountain@2x.webp",
+          "description": "",
+          "status": "Sold"
+        },
+        {
+          "name": "",
+          "img": "/properties/DE-Website-Homepage-Track-Record_Woods-of-Decatur@2x.webp",
+          "description": "",
+          "status": "Sold"
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "What Our Investors Have To Say",
+    "reviews": [
+    {
+      "review": "Investing with this company has been a fantastic experience. The team's expertise and dedication have resulted in significant returns.",
+      "author": "John Doe",
+      "profession": "Financial Advisor",
+      "rating": 5
+    },
+    {
+      "review": "I appreciate the transparency and professionalism. The updates and reports are timely and thorough, making it easy to track my investments.",
+      "author": "Jane Smith",
+      "profession": "Accountant",
+      "rating": 4.5
+    },
+    {
+      "review": "The property management team is exceptional. They ensure everything runs smoothly, and my investment has grown steadily over the years.",
+      "author": "Michael Johnson",
+      "profession": "Real Estate Agent",
+      "rating": 5
+    },
+    {
+      "review": "I was initially skeptical, but this company has exceeded my expectations. The returns have been consistent, and the process is hassle-free.",
+      "author": "Emily Brown",
+      "profession": "Entrepreneur",
+      "rating": 4.8
+    },
+    {
+      "review": "The team is knowledgeable and responsive. Any questions I have are answered promptly, and I feel confident in the security of my investment.",
+      "author": "Chris Davis",
+      "profession": "Lawyer",
+      "rating": 4.7
+    },
+    {
+      "review": "Their attention to detail and commitment to maximizing profitability is impressive. I'm very satisfied with the performance of my investments.",
+      "author": "Sarah Wilson",
+      "profession": "Marketing Manager",
+      "rating": 4.9
+    },
+    {
+      "review": "A reliable and trustworthy company. The returns have been excellent, and the communication is top-notch. Highly recommended!",
+      "author": "David Martinez",
+      "profession": "Engineer",
+      "rating": 5
+    },
+    {
+      "review": "Their approach to real estate investment is both strategic and effective. I've seen remarkable growth in my portfolio since partnering with them.",
+      "author": "Linda Anderson",
+      "profession": "Consultant",
+      "rating": 4.6
+    }
+    ]
+  },
+  "realEstateSyndication": {
+    "img": "/building-4402415_1280.webp",
+    "title": "What Is A Real Estate Syndication?",
+    "description": [
+      "Investing in real estate has never been easier. Real estate syndications refer to a group of like-minded expert investors who pool their money to buy lucrative commercial real estate investments! Real estate syndications are led by sponsorship teams, such as Disrupt Equity. They work on your behalf to find great real estate property, raise the capital for the property, and manage the day-to-day operations of the real estate property once it is purchased.",
+      "As a passive investor in a real estate syndication, you’ll never have to worry about tenants or maintenance issues. We manage your investment for you, making your investment completely passive. At the same time, you still get to take advantage of the benefits real estate offers, including:"  
+    ],
+    "benefits": [
+      "Equity Ownership",
+      "Appreciation", 
+      "Tax Benefits", 
+      "Monthly Cash flow Returns"
+    ],
+    "outword": "Passive real estate investing can scale your investment portfolio without additional time or stress! Begin your journey as a passive investor with Elevate Estate Partners by clicking the Invest With Us button below! "
+  }
+
+}

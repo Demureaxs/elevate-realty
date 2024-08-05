@@ -1,0 +1,169 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider  = "postgresql"
+    url       = env("DATABASE_URL")
+    directUrl = env("DIRECT_URL")
+}
+
+model User {
+    id           Int           @id @default(autoincrement())
+    username     String?       @unique
+    email        String        @unique
+    password     String
+    role         Role          @default(USER)
+    avatarUrl    String? // Optional avatar URL
+    address      Address? // Optional address details
+    products     Product[]
+    basket       Basket[]
+    rentals      Rental[]
+    rentalItems  RentalItem[]
+    transactions Transaction[] // New field for transaction history
+    createdAt    DateTime      @default(now())
+    updatedAt    DateTime      @updatedAt
+    viewing      Viewing[]
+    properties   Property[]
+    accounts     Account[]
+    sessions     Session[]
+}
+
+model Account {
+    id                 Int       @id @default(autoincrement())
+    userId             Int
+    provider           String
+    providerAccountId  String
+    refreshToken       String?
+    accessToken        String?
+    accessTokenExpires DateTime?
+    user               User      @relation(fields: [userId], references: [id])
+}
+
+model Session {
+    id           Int      @id @default(autoincrement())
+    sessionToken String   @unique
+    accessToken  String   @unique
+    expires      DateTime
+    userId       Int
+    user         User     @relation(fields: [userId], references: [id])
+}
+
+enum Role {
+    SUPER_USER
+    ADMIN
+    USER
+}
+
+model Address {
+    id       Int    @id @default(autoincrement())
+    street   String
+    city     String
+    state    String
+    zip      String
+    country  String
+    user     User   @relation(fields: [authorId], references: [id])
+    authorId Int    @unique
+}
+
+model Property {
+    id            Int          @id @default(autoincrement())
+    title         String
+    description   String
+    price         Float
+    address       String
+    city          String
+    state         String
+    zip           String
+    country       String
+    type          String
+    bedrooms      Int
+    bathrooms     Int
+    size          Float
+    availableFrom DateTime
+    createdAt     DateTime     @default(now())
+    updatedAt     DateTime     @updatedAt
+    imageUrls     String[] // Multiple image URLs
+    rentals       Rental[]
+    rentalItems   RentalItem[]
+    viewing       Viewing[]
+    authorId      Int
+    user          User         @relation(fields: [authorId], references: [id])
+}
+
+model RentalItem {
+    id          Int           @id @default(autoincrement())
+    name        String
+    description String?
+    price       Float
+    available   Boolean       @default(true)
+    stock       Int           @default(0)
+    propertyId  Int
+    property    Property      @relation(fields: [propertyId], references: [id])
+    rentals     Rental[]
+    basket      Basket[]
+    imageUrls   String[] // Multiple image URLs
+    authorId    Int? // Optional relation to a User
+    user        User?         @relation(fields: [authorId], references: [id])
+    transaction Transaction[]
+}
+
+model Rental {
+    id          Int          @id @default(autoincrement())
+    startDate   DateTime
+    endDate     DateTime
+    rentalItems RentalItem[]
+    property    Property     @relation(fields: [propertyId], references: [id])
+    propertyId  Int
+    user        User         @relation(fields: [authorId], references: [id])
+    authorId    Int
+    viewings    Viewing[] // New field for property viewings
+}
+
+model Basket {
+    id        Int        @id @default(autoincrement())
+    productId Int
+    quantity  Int
+    user      User       @relation(fields: [authorId], references: [id])
+    authorId  Int
+    product   RentalItem @relation(fields: [productId], references: [id])
+}
+
+// need a user reference
+model Product {
+    id          Int           @id @default(autoincrement())
+    name        String
+    description String
+    price       Float
+    category    String
+    stock       Int
+    imageUrls   String[] // Multiple image URLs
+    createdAt   DateTime      @default(now())
+    updatedAt   DateTime      @updatedAt
+    transaction Transaction[]
+    user        User?         @relation(fields: [authorId], references: [id])
+    authorId    Int?
+}
+
+model Transaction {
+    id           Int         @id @default(autoincrement())
+    amount       Float
+    date         DateTime    @default(now())
+    user         User        @relation(fields: [authorId], references: [id])
+    authorId     Int
+    rentalItem   RentalItem? @relation(fields: [rentalItemId], references: [id])
+    rentalItemId Int?
+    product      Product?    @relation(fields: [productId], references: [id])
+    productId    Int?
+}
+
+model Viewing {
+    id         Int      @id @default(autoincrement())
+    date       DateTime
+    user       User     @relation(fields: [authorId], references: [id])
+    authorId   Int
+    property   Property @relation(fields: [propertyId], references: [id])
+    propertyId Int
+    rental     Rental?  @relation(fields: [rentalId], references: [id])
+    rentalId   Int?
+}

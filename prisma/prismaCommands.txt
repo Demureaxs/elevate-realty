@@ -1,0 +1,96 @@
+
+# Prisma CLI Commands
+
+## 1. `npx prisma init`
+
+**Explanation:**
+Initializes a new Prisma project. This command creates the `prisma` folder with a `schema.prisma` file where you define your database schema, and a `.env` file for environment variables.
+
+---
+
+## 2. `npx prisma migrate dev --name <migration-name>`
+
+**Explanation:**
+Runs the migrations defined in your Prisma schema file against your database. This command is used for local development and will also generate a new migration file based on changes to the `schema.prisma` file. Replace `<migration-name>` with a descriptive name for the migration.
+
+---
+
+## 3. `npx prisma migrate deploy`
+
+**Explanation:**
+Applies pending migrations to the database. This command is used in production environments to deploy schema changes without generating new migrations.
+
+---
+
+## 4. `npx prisma migrate reset`
+
+**Explanation:**
+Drops the database, recreates it, and applies all migrations. This command is useful for resetting your local development database to match your `schema.prisma` file. WARNING: This will delete all existing data!
+
+---
+
+## 5. `npx prisma generate`
+
+**Explanation:**
+Generates the Prisma Client based on your schema. You should run this command whenever you make changes to your Prisma schema or update your dependencies.
+
+---
+
+## 6. `npx prisma db push`
+
+
+**Explanation:**
+Pushes your Prisma schema changes to the database without creating a migration. This is useful for quickly syncing your database schema with the `schema.prisma` file without generating a migration file.
+
+---
+
+## 7. `npx prisma studio`
+
+**Explanation:**
+Opens the Prisma Studio UI for inspecting and manipulating your database data. It's a convenient way to view and edit your database records.
+
+---
+
+## 8. `npx prisma introspect`
+
+**Explanation:**
+Introspects an existing database and updates the `schema.prisma` file with the current database schema. This is useful if you’re working with an existing database.
+
+---
+
+## 9. `npx prisma validate`
+
+**Explanation:**
+Validates your Prisma schema file to ensure that it’s correct. This command checks for schema issues before you run migrations or generate the Prisma Client.
+
+---
+
+## 10. `npx prisma db seed`
+
+
+**Explanation:**
+Runs the seed script defined in your `prisma/seed.ts` or `prisma/seed.js` file to populate your database with initial data. You can use this for setting up default values or test data.
+
+---
+
+## 11. `npx prisma info`
+
+
+**Explanation:**
+Displays information about your Prisma setup, including the current database URL and the Prisma version.
+
+---
+
+## 12. `npx prisma reset`
+
+**Explanation:**
+Drops all data and re-applies all migrations. This command is similar to `migrate reset`, but you have to manually run migrations afterwards. 
+
+---
+
+## 13. `npx prisma --help`
+
+
+**Explanation:**
+Shows a list of available Prisma commands and options. This is useful for discovering more commands and getting help on specific commands.
+
